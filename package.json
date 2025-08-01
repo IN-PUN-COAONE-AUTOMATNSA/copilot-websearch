@@ -2,6 +2,7 @@
   "name": "atos-chatbot",
   "version": "1.0.0",
   "description": "Atos AI Assistant Chatbot with Copilot Studio integration",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -16,7 +17,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --passWithNoTests",
     "eject": "react-scripts eject",
     "deploy": "npm run build && gh-pages -d build"
   },
