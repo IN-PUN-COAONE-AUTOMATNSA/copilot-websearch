@@ -22,7 +22,6 @@ A modern, responsive chatbot application built with React and integrated with Mi
 - Node.js (v16 or higher)
 - npm or yarn
 - Git
-- Microsoft Copilot Studio access
 
 ## 🚀 Quick Start
 
@@ -33,19 +32,13 @@ cd copilot-websearch
 npm install
 ```
 
-### 2. Environment Configuration
-```bash
-cp .env.example .env
-# Edit .env with your Copilot Studio API credentials
-```
-
-### 3. Development
+### 2. Development
 ```bash
 npm start
 # Opens on http://localhost:3000
 ```
 
-### 4. Production Build
+### 3. Production Build
 ```bash
 npm run build
 npm run deploy
@@ -53,19 +46,7 @@ npm run deploy
 
 ## ⚙️ Configuration
 
-### Environment Variables
-
-Create a `.env` file with the following variables:
-
-```env
-REACT_APP_COPILOT_API_ENDPOINT=https://your-copilot-studio-endpoint.com/api/chat
-REACT_APP_API_KEY=your-api-key-here
-REACT_APP_SUBSCRIPTION_KEY=your-subscription-key-here
-```
-
-### Copilot Studio Integration
-
-The application is designed to work with Microsoft Copilot Studio Agent APIs. Update the API endpoint and authentication headers in the environment variables.
+The application uses an embedded Copilot Studio webchat interface. No additional API configuration is required.
 
 ## 🚀 Deployment
 
@@ -82,9 +63,9 @@ Configure Azure Static Web Apps for enterprise deployment with the included work
 - Logo: Update in the header component
 - Messaging: Modify initial greeting and placeholder text
 
-### API Integration
-- Endpoint configuration: `.env` file
-- Request/response format: `src/components/AtosChatbot.js`
+### Copilot Integration
+- The embedded Copilot Studio webchat is integrated via iframe
+- No additional configuration required
 
 ## 📱 Browser Support
 
